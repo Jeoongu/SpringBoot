@@ -4,7 +4,7 @@
 | JPA Auditing                            | ✅ |
 | 스프링부트 DDD                          | 🔺 |
 | Nginx 이해                      | ✅ |
-| 스프링부트 with ACL                      | **진행중** |
-| Querydsl                      | 진행 예정 |
+| Querydsl                      | **진행중** |
+| 스프링부트 with ACL                      | 진행 예정 |
 
 <!-- ✅, **진행중**, 🔺, 진행 예정 4개로 진행현황 표시 -->
