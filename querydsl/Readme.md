@@ -39,4 +39,12 @@
 <img src="https://velog.velcdn.com/images/chang626/post/19f3fa40-c7e3-4682-8c2b-c0f137fc7eb1/image.png" width=300px>
 <img src="https://blog.kakaocdn.net/dn/GaaEz/btrE5TuxUdv/I1J43tpkjBLLrLsRlj4rK0/img.png" width=300px>
 
-- 
+- 의존성 주입
+'''java
+// 현재 설정
+implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+'''
+- QClass가 생성될 수 있도록 설정 추가
