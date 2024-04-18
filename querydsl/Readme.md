@@ -40,11 +40,30 @@
 <img src="https://blog.kakaocdn.net/dn/GaaEz/btrE5TuxUdv/I1J43tpkjBLLrLsRlj4rK0/img.png" width=300px>
 
 - 의존성 주입
-'''java
+```java
 // 현재 설정
 implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
 annotationProcessor "jakarta.annotation:jakarta.annotation-api"
 annotationProcessor "jakarta.persistence:jakarta.persistence-api"
-'''
+```
 - QClass가 생성될 수 있도록 설정 추가
+```java
+// Querydsl 설정부
+def generated = 'src/main/generated'
+
+// querydsl QClass 파일 생성 위치를 지정
+tasks.withType(JavaCompile) {
+    options.getGeneratedSourceOutputDirectory().set(file(generated))
+}
+
+// java source set 에 querydsl QClass 위치 추가
+sourceSets {
+    main.java.srcDirs += [ generated ]
+}
+
+// gradle clean 시에 QClass 디렉토리 삭제
+clean {
+    delete file(generated)
+}
+```
