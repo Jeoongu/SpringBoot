@@ -6,7 +6,7 @@
 | Nginx 이해                      | ✅ |
 | Querydsl                      | **진행중** |
 | Java Record                     | ✅ |
-| MIS(Management Information System)                   | **진행중** |
+| MIS(Management Information System)                   | **진행중**, 🔺 |
 | 스프링부트 with ACL                      | 진행 예정 |
 
 <!-- ✅, **진행중**, 🔺, 진행 예정 4개로 진행현황 표시 -->
