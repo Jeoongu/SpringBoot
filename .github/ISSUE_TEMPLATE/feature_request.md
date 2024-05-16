@@ -1,14 +1,20 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: feature 이슈
+about: 구현할 내용 정리
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-## 📝 Description
-- 설명적기
+### 📝 Description
 
-## 📝 Todo
-- [ ] : 어떤 기능을 개발할 것인지 적기
+- 구현할 내용 1
+- 구현할 내용 2
+
+---
+
+### 📝 Todo
+
+- [ ] : 구현할 내용 1
+- [ ] : 구현할 내용 2
