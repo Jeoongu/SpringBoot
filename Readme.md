@@ -7,6 +7,7 @@
 | Querydsl                      | **진행중** |
 | Java Record                     | ✅ |
 | MIS(Management Information System)                   | **진행중**, 🔺 |
+| Redis                  | **진행중** |
 | ApiResponse                    | 진행 예정 |
 | 스프링부트 with ACL                      | 진행 예정 |
 
