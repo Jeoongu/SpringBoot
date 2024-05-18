@@ -10,4 +10,21 @@
 
 ### Cache 서버의 2가지 패턴
 1. Look aside cache
+    1. 클라이언트가 데이터를 요청
+    2. 웹서버는 데이터가 존재하는지 Cache 서버에 먼저 확인
+    3. Cache 서버에 데이터가 있으면 DB에 데이터를 조회하지 않고 Cache 서버에 있는 결과값을 클라이언트에게 바로 반환 (Cache Hit)
+    4. Cache 서버에 데이터가 없으면 DB에 데이터를 조회하여 Cache 서버에 저장하고 결과값을 클라이언트에게 반환 (Cache Miss) 
 2. Write Back
+    1. 웹서버는 모든 데이터를 Cache 서버에 저장
+    2. Cache 서버에 특정 시간 동안 데이터가 저장됨
+    3. Cache 서버에 있는 데이터를 DB에 저장
+    4. DB에 저장된 Cache 서버의 데이터를 삭제
+
+
+### Redis의 특징
+- Key, Value 구조이기 때문에 쿼리를 사용할 필요가 없다.
+- 데이터를 디스크에 쓰는 구조가 아니라 메모리에서 데이터를 처리하기 때문에 속도가 빠르다.
+- String, Lists, Sets, Sorted Sets, Hashes 자료 구조를 지원한다.
+- Single Threaded이다. 한 번에 하나의 명령만 처리할 수 있다.(get/set 명령어의 경우 초당 10만 개 이상 처리할 수 있다.)
+
+
