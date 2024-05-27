@@ -6,11 +6,10 @@
 
 - 윈도우에서는 Redis-server를 직접 실행하거나 서비스에 등록해서 서버를 가동시키고, 이 서버에 데이터를 저장하고 사용하는 것은 Redis-cli에서 한다.
 
-
 ### implementation
 ```java
-// redis
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.3.1.RELEASE
+    // redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.3.1.RELEASE'
 ```
 - 상황에 맞춰 버전을 사용한다.
 
