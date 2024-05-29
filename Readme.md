@@ -8,6 +8,8 @@
 | Java Record                     | ✅ |
 | MIS(Management Information System)                   | **진행중** |
 | Redis                  | ✅ |
+| 스프링 스케줄러                    | 진행 예정 |
+| 스프링 배치              | 진행 예정 |
 | ApiResponse                    | 진행 예정 |
 | 스프링부트 with ACL                      | 진행 예정 |
 

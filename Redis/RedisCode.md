@@ -18,8 +18,8 @@
 spring:
     data:
         redis:
-            port: 26379
-            host: 192.168.85.49
+            port: 6379
+            host: 127.0.0.1
             password: 1234
 ```
 - port는 기본적으로 6379가 기본이다. 변경도 가능하다.
@@ -62,7 +62,6 @@ public class RedisConfig {
     }
 }
 ```
-
 - Redis 연결을 위해 RedisConnectionFactory를 사용한다.
 - 여기에 RedisStandaloneConfiguration 객체를 생성하여 setHostName, setPort, setPassWord로 connection에 대한 정보를 입력해준다.
 - key와 value를 입력하고 사용하기 위해서 하나의 Template를 생성한다. 
