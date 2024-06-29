@@ -6,8 +6,9 @@
 | Nginx 이해                      | ✅ |
 | Querydsl                      | **진행중** |
 | Java Record                     | ✅ |
-| MIS(Management Information System)                   | **진행중** |
+| MIS(Management Information System)                   | ✅ |
 | Redis                  | ✅ |
+| Kotlin val, var                  | ✅ |
 | 스프링 스케줄러                    | 진행 예정 |
 | 스프링 배치              | 진행 예정 |
 | ApiResponse                    | 진행 예정 |
