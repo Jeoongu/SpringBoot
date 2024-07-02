@@ -1,4 +1,5 @@
 # QueryDSL code 예시
+- QueryDSL 사용으로 성능 향상이 가능하다.
 
 ### 의존성 주입
 ```java
@@ -44,4 +45,37 @@ public class QueryDSLConfig {
 }
 ```
 
-### 3. 
+### 3. Custom Repository 생성 후 Spirng Data Jpa Repository와 연결하기
+- 예시 Spring JPA Repository
+```java
+public interface MemberRepository extends JpaRepository<Member, Long> {
+}
+```
+- QueryDSL을 사용하기 위한 별도의 사용자 정의 레포지토리를 인터페이스로 생성한다.
+```java
+public interface MemberQueryDSLRepositoryCustom {
+ 
+    List<Member> findAllMember();
+}
+```
+- 생성한 인터페이스를 구현하는 구현체 레포지토리를 만든다.
+- 일종의 규칙이 존재한다. Spring Data Jpa 리포지토리 인터페이스명 뒤에 Impl을 붙여 구현한다.
+```java
+@RequiredArgsConstructor
+public class MemberRepositoryImpl implements MemberQueryDSLRepositoryCustom {
+    private final JPAQueryFactory jpaQueryFactory; // querydsl을 사용하기 위한 의존성 주입
+ 
+    @Override
+    public List<Member> findAllMember() {
+        return jpaQueryFactory
+                .selectFrom(member)
+                .fetch();
+    }
+}
+```
+-  MemberRepository에 QueryDSL 사용자 정의 리포지토리 인터페이스를 추가로 implement한다.
+```java
+public interface MemberRepository extends JpaRepository<Member, Long>, MemberQueryDSLRepositoryCustom {
+}
+```
+- 이제 MemberRepository만 주입받아서 서비스에서 QueryDSL문법을 사용한 메소드를 사용할 수 있게 된다.
