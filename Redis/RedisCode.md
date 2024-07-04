@@ -9,7 +9,8 @@
 ### implementation
 ```java
     // redis
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.3.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    // :2.3.1.RELEASE'
 ```
 - 상황에 맞춰 버전을 사용한다.
 
