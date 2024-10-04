@@ -11,6 +11,7 @@
 | Kotlin val, var                  | ✅ |
 | RESTful API                    | ✅ |
 | MongoDB                   | **진행중** |
+| 테스트 코드                  | **진행중** |
 | 스프링 스케줄러                    | 진행 예정 |
 | 스프링 배치              | 진행 예정 |
 | ApiResponse                    | 진행 예정 |
