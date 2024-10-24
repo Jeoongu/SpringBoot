@@ -55,5 +55,8 @@
 - 스프링 웹 MVC의 DispatcherServlet이 바로 이 Front Controller 패턴으로 구현되어 있다.
 - DispatcherServlet에서 공통적인 내용을 처리한 후, 어떤 컨트롤러로 보내야 할지 판단해야 한다.
 
-
+### 2. 핸들러 매핑
+- DispatcherServlet에서 핸들러 조회를 한다.
+- 핸들러 매핑을 통해 요청된 URL에 매핑된 핸들러(컨트롤러)를 조회한다.
+    - 요즘은 @RequestMapping을 기반으로 핸들러를 주로 구성하므로, 이를 통해 찾는다.
 
