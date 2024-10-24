@@ -68,3 +68,7 @@
     - 스프링에서 개발자에게 핸들러(컨트롤러)를 구성할 수 있는 여러가지 방식을 지원하기 때문이다.
     - @RequestMapping, HttpRequestHandler 상속, Controller 인터페이스 상속 등 다양한 방식이 있으며, 각 방식을 수행하기 위해 그에 맞는 핸들러 어댑터를 미리 구현해 두고, 필요한 어댑터를 사용한다.
         - 요즘은 @RequestMapping을 주로 사용한다.
+
+### 4. ModelAndView 반환 
+- 핸들러 어댑터는 핸들러가 반환하는 정보를 받아, ModelAndView로 변환해서 반환한다.
+- 핸들러의 컨트롤러가 String, ModelAndView, 파라미터의 Model 객체, 어떤 것으로 반환하든 어댑터가 이를 알아서 변환해준다.
