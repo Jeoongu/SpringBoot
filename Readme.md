@@ -11,6 +11,7 @@
 | Kotlin val, var                  | ✅ |
 | RESTful API                    | ✅ |
 | MongoDB                   | ✅, 코드는 실무에서 다룸 |
+| Lambda(+다양한 함수형 인터페이스)                  | **진행중** |
 | 테스트 코드                  | **진행중** |
 | Spring MVC                | **진행중** |
 | 스프링 스케줄러                    | 진행 예정 |
