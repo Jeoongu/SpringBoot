@@ -10,7 +10,7 @@
 | Redis                  | ✅ |
 | Kotlin val, var                  | ✅ |
 | RESTful API                    | ✅ |
-| MongoDB                   | **진행중** |
+| MongoDB                   | ✅, 코드는 실무에서 다룸 |
 | 테스트 코드                  | **진행중** |
 | Spring MVC                | **진행중** |
 | 스프링 스케줄러                    | 진행 예정 |
